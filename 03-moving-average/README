@@ -1,0 +1,22 @@
+# 03 - Moving Average 
+This program calucalate the average of temperature readings from a sensor which were stored in array. 
+
+## How to build and run
+gcc moving_average.c -o moving_average 
+./moving_average
+
+## What it does 
+First the temperature reading are printed out using a for loop and then summed up using a for loop and a sumvalue  which stores the whole sum of the temperatur readings. Finally the program output the Average temperature reading to a 2 decimal place. 
+
+## New concept learnt
+Arrays, the sizeof trick for length, looping with the 
+computed length, accumulating into a sum, integer-vs-float 
+division. 
+sumvalue and average were changed to float because I realised something about casting where if 2 int divide and even if it result to a float the decimal part is thrown away, so that i changed the variables from int to float. 
+
+## limitations
+Lack of knowledge of the int division
+Harcoding the section (for (int i=0; i < 20; i++)).instead of using the length_array
+
+## Next steps
+The rolling window. That is: instead of one average over all 20 values, compute a window of 5 consecutive readings as you walk through the array, and print 16 rolling averages. 
